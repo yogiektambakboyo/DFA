@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" android:background="@android:color/white">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:id="@+id/linearLayout">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="48dip" android:layout_marginBottom="3dip"
+                      android:background="@drawable/wh_taskbg" android:layout_gravity="center">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:text="FAKTUR TAK TERKIRIM"
+                    android:id="@+id/textView" android:layout_gravity="center" android:textSize="25sp"
+                    android:textColor="@android:color/white" android:textStyle="bold"
+                    android:gravity="center|center_vertical|center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_gravity="left" android:gravity="left"
+                android:paddingLeft="5dip">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                    android:background="#66CCFF" android:layout_marginRight="5dip" android:visibility="visible">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="105dip"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        android:layout_marginLeft="5dip">
+                    <TextView
+                            android:layout_width="85dip"
+                            android:layout_height="wrap_content"
+                            android:text="No PickList"
+                            android:id="@+id/TextView" android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No Pick List"
+                            android:id="@+id/FakturTakTerkirim_TxtNoPickList" android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                    android:background="#74C2E1" android:layout_marginRight="5dip">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="105dip"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        android:layout_marginLeft="5dip">
+                    <TextView
+                            android:layout_width="85dip"
+                            android:layout_height="wrap_content"
+                            android:text="KKPDV"
+                            android:id="@+id/TextView" android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="KKPDV"
+                            android:id="@+id/FakturTakTerkirim_TxtKKPDV" android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                    android:background="#66CCFF" android:layout_marginRight="5dip">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="105dip"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        android:layout_marginLeft="5dip">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Faktur "
+                            android:id="@+id/TextView" android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        >
+                    <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Faktur"
+                            android:id="@+id/FakturTakTerkirim_TxtFaktur" android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                    android:background="#74C2E1" android:layout_marginRight="5dip">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="105dip"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        android:layout_marginLeft="5dip">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pelanggan "
+                            android:id="@+id/TextView" android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pelanggan"
+                            android:id="@+id/FakturTakTerkirim_TxtPelanggan" android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                    android:background="#74C2E1" android:layout_marginRight="5dip" android:visibility="visible">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="105dip"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        android:layout_marginLeft="5dip">
+                    <TextView
+                            android:layout_width="85dip"
+                            android:layout_height="wrap_content"
+                            android:text="Total Bayar"
+                            android:id="@+id/TextView" android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Bayar"
+                            android:id="@+id/FakturTakTerkirim_TxtTotalBayar" android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                    android:background="#66CCFF" android:layout_marginRight="5dip" android:visibility="visible">
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="105dip"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        android:layout_marginLeft="5dip">
+                    <TextView
+                            android:layout_width="85dip"
+                            android:layout_height="wrap_content"
+                            android:text="Total SKU"
+                            android:id="@+id/TextView" android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total SKU"
+                            android:id="@+id/FakturTakTerkirim_TxtSKU" android:textStyle="bold"
+                            android:textColor="@android:color/black"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                android:background="#C0C0C0" android:layout_marginRight="5dip" android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alasan Tidak Terkirim : "
+                    android:id="@+id/TextView" android:textStyle="bold"
+                    android:textColor="@android:color/black" android:layout_marginTop="5dip"
+                    android:layout_marginLeft="5dip"/>
+            <Spinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/FakturTakTerkirim_SpnAlasanRetur" android:layout_marginTop="2dip"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentBottom="true"
+                   android:layout_gravity="bottom"
+                   android:paddingTop="5dip" android:orientation="horizontal"
+                   android:gravity="center_horizontal|left" android:paddingBottom="5dip"
+                   android:background="#3399FF" android:id="@+id/linearLayout">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:id="@+id/FakturTakTerkirim_BtnSubmit" style="@style/btnStyleGreen" android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

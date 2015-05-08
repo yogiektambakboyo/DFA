@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="350dip"
+              android:layout_height="match_parent" android:background="@android:color/white">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="5dip"
+            android:background="#3399FF" android:layout_marginRight="5dip">
+        <TextView
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="Total KKPDV"
+                android:id="@+id/textView" android:textColor="@android:color/black" android:textStyle="bold"
+                android:layout_marginLeft="5dip"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:id="@+id/MainMenu_DeliveryInfoKKPDVRp" android:textColor="@android:color/black" android:textStyle="bold"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(0)"
+                android:id="@+id/MainMenu_DeliveryInfoKKPDV" android:textColor="@android:color/black" android:textStyle="bold"
+                android:layout_marginLeft="5dip"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:background="#66CCFF"
+            android:layout_marginRight="5dip">
+        <TextView
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="Total Faktur"
+                android:id="@+id/textView" android:textColor="@android:color/black" android:textStyle="bold"
+                android:layout_marginLeft="5dip"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/MainMenu_DeliveryInfoFaktur" android:textColor="@android:color/black" android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:background="#3399FF"
+            android:layout_marginRight="5dip">
+        <TextView
+                android:layout_width="120dip"
+                android:layout_height="wrap_content"
+                android:text="Faktur Terproses"
+                android:id="@+id/textView" android:textColor="@android:color/black" android:textStyle="bold"
+                android:layout_marginLeft="5dip" android:textSize="14sp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:id="@+id/MainMenu_DeliveryInfoFakturFinRp" android:textColor="@android:color/black" android:textStyle="bold"
+                />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(0)"
+                android:id="@+id/MainMenu_DeliveryInfoFakturFin" android:textColor="@android:color/black" android:textStyle="bold"
+                android:layout_marginLeft="5dip"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_marginRight="5dip">
+        <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="Tipe"
+                android:id="@+id/textView" android:textColor="#3399FF" android:layout_marginLeft="10dip"
+                android:textStyle="bold"/>
+        <TextView
+                android:layout_width="45dip"
+                android:layout_height="wrap_content"
+                android:text="Jml"
+                android:id="@+id/xxx" android:textColor="#3399FF" android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nominal"
+                android:id="@+id/xxx" android:textColor="#3399FF" android:textStyle="bold"
+                android:layout_marginLeft="10dip"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:background="#CCFFCC"
+            android:layout_marginRight="5dip">
+        <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="Tunai"
+                android:id="@+id/textView" android:textColor="@android:color/black" android:layout_marginLeft="10dip"/>
+        <TextView
+                android:layout_width="45dip"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:id="@+id/MainMenu_DeliveryInfoFakturTun" android:textColor="@android:color/black" android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:id="@+id/MainMenu_DeliveryInfoFakturTunRp" android:textColor="@android:color/black" android:textStyle="bold"
+                android:layout_marginLeft="10dip"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_marginRight="5dip">
+        <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="Transfer"
+                android:id="@+id/textView" android:textColor="@android:color/black" android:layout_marginLeft="10dip"/>
+        <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/MainMenu_DeliveryInfoFakturTransfer" android:textColor="@android:color/black" android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:id="@+id/MainMenu_DeliveryInfoFakturTransferRp" android:textColor="@android:color/black" android:textStyle="bold"
+                android:layout_marginLeft="10dip"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_marginRight="5dip" android:background="#CCFFCC">
+        <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="Cek/BG"
+                android:id="@+id/textView" android:textColor="@android:color/black" android:layout_marginLeft="10dip"/>
+        <TextView
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/MainMenu_DeliveryInfoFakturBG" android:textColor="@android:color/black" android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:id="@+id/MainMenu_DeliveryInfoFakturBGRp" android:textColor="@android:color/black" android:textStyle="bold"
+                android:layout_marginLeft="10dip"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:background="#CCFFCC"
+            android:layout_marginRight="5dip" android:visibility="gone">
+        <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="Tunai+BG"
+                android:id="@+id/textView" android:textColor="@android:color/black" android:layout_marginLeft="10dip"/>
+        <TextView
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/MainMenu_DeliveryInfoFakturTunBG" android:textColor="@android:color/black" android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rp 0"
+                android:id="@+id/MainMenu_DeliveryInfoFakturTunBGRp" android:textColor="@android:color/black" android:textStyle="bold"
+                android:layout_marginLeft="10dip"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_marginRight="5dip">
+        <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="TT"
+                android:id="@+id/textView" android:textColor="@android:color/black" android:layout_marginLeft="10dip"/>
+        <TextView
+                android:layout_width="45dip"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/MainMenu_DeliveryInfoFakturTT" android:textColor="@android:color/black" android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip" android:background="#CCFFCC">
+        <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="Stempel"
+                android:id="@+id/textView" android:textColor="@android:color/black" android:layout_marginLeft="10dip"/>
+        <TextView
+                android:layout_width="45dip"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/MainMenu_DeliveryInfoFakturStempel" android:textColor="@android:color/black" android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_marginRight="5dip">
+        <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="Tidak Terkirim"
+                android:id="@+id/textView" android:textColor="@android:color/black" android:layout_marginLeft="10dip"/>
+        <TextView
+                android:layout_width="45dip"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/MainMenu_DeliveryInfoFakturTakTerkirim" android:textColor="@android:color/black" android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip" android:background="#CCFFCC">
+        <TextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="Tolakan"
+                android:id="@+id/textView" android:textColor="@android:color/black" android:layout_marginLeft="10dip"/>
+        <TextView
+                android:layout_width="45dip"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/MainMenu_DeliveryInfoFakturTolakan" android:textColor="@android:color/black" android:textStyle="bold"
+                android:gravity="center_horizontal"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:background="#66CCFF"
+            android:layout_marginRight="5dip">
+        <TextView
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:text="Total Faktur Tersisa"
+                android:id="@+id/textView" android:textColor="@android:color/black" android:textStyle="bold"
+                android:layout_marginLeft="5dip"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/MainMenu_DeliveryInfoFakturRem" android:textColor="@android:color/black" android:textStyle="bold"
+                android:layout_marginLeft="10dip"/>
+    </LinearLayout>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutup"
+            android:id="@+id/MainMenu_DeliveryInfoBtnClose" android:layout_gravity="center"
+            android:layout_marginTop="5dip" style="@style/btnStyleDarkBlue" android:layout_marginBottom="5dip"/>
+</LinearLayout>

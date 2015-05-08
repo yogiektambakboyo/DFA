@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@android:color/white">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:layout_marginTop="10dip"
+                  android:layout_marginLeft="5dip">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal"
+                      android:layout_marginBottom="5dip">
+            <TextView
+                    android:layout_width="110dip"
+                    android:layout_height="wrap_content"
+                    android:text="Brg"
+                    android:id="@+id/textView1" android:textSize="18dip" android:textColor="@android:color/black"
+                    android:textStyle="bold" android:gravity="center_vertical"/>
+            <Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TambahTolakan_SpnSKU"
+                     android:layout_gravity="center" android:spinnerMode="dialog"/>
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal"
+                      android:layout_marginBottom="5dip">
+            <TextView
+                    android:layout_width="110dip"
+                    android:layout_height="wrap_content"
+                    android:text="SKU"
+                    android:id="@+id/textView1" android:textSize="18dip" android:textColor="@android:color/black"
+                    android:gravity="center_vertical" android:textStyle="bold"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KodeSKU"
+                    android:id="@+id/TambahTolakan_SKU" android:textSize="18dip"
+                    android:textColor="@android:color/holo_blue_dark" android:textStyle="bold"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(99)"
+                    android:id="@+id/TambahTolakan_JmlMaksSKU" android:layout_marginLeft="5dip"
+                    android:textColor="@android:color/holo_red_light" android:textStyle="bold"
+                    android:textSize="18dip"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="new "
+                    android:id="@+id/TambahTolakan_RasioMaks" android:layout_gravity="center_horizontal|top"
+                    android:visibility="gone"/>
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal"
+                      android:layout_marginBottom="5dip">
+            <TextView
+                    android:layout_width="110dip"
+                    android:layout_height="wrap_content"
+                    android:text="Jml (PCS)"
+                    android:id="@+id/textView1" android:textSize="18dip" android:textColor="@android:color/black"
+                    android:gravity="center_vertical" android:textStyle="bold"/>
+            <EditText
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/TambahTolakan_Jml" android:singleLine="true" android:inputType="number"/>
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal"
+                      android:layout_marginBottom="5dip">
+            <TextView
+                    android:layout_width="110dip"
+                    android:layout_height="wrap_content"
+                    android:text="Alasan"
+                    android:id="@+id/textView1" android:textSize="18dip" android:textColor="@android:color/black"
+                    android:textStyle="bold" android:gravity="center_vertical"/>
+            <Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TambahTolakan_SpnAlasan"
+                     android:layout_gravity="center" android:spinnerMode="dialog"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" android:layout_marginTop="10dip"
+                  android:gravity="center_vertical|center_horizontal" android:layout_marginBottom="10dip">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batal"
+                android:id="@+id/TambahTolakan_BtnBatal" android:gravity="center_vertical|center_horizontal"
+                style="@style/btnStyleRed" android:layout_marginRight="10dip"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/TambahTolakan_BtnSubmit" style="@style/btnStyleDarkBlue"
+                android:layout_marginLeft="10dip"/>
+    </LinearLayout>
+
+</LinearLayout>

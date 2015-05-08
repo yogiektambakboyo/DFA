@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" android:background="@android:color/white">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:id="@+id/linearLayout">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="48dip" android:layout_marginBottom="3dip"
+                      android:background="@drawable/wh_taskbg" android:layout_gravity="center">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:text="PEMBAYARAN GIRO"
+                    android:id="@+id/textView" android:layout_gravity="center" android:textSize="25sp"
+                    android:textColor="@android:color/white" android:textStyle="bold"
+                    android:gravity="center|center_vertical|center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginLeft="5dip">
+            <TextView
+                    android:layout_width="70dip"
+                    android:layout_height="wrap_content"
+                    android:text="KKPDV"
+                    android:id="@+id/textView1" android:textColor="@android:color/black" android:textSize="16sp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KKPDV"
+                    android:id="@+id/Giro_KKPDV" android:textColor="@android:color/black" android:textSize="16sp"
+                    android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginLeft="5dip" android:visibility="gone">
+            <TextView
+                    android:layout_width="70dip"
+                    android:layout_height="wrap_content"
+                    android:text="Pick List"
+                    android:id="@+id/textView1" android:textColor="@android:color/black" android:textSize="16sp"
+                    android:visibility="gone"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PickList"
+                    android:id="@+id/Giro_PickList" android:textColor="@android:color/black" android:textSize="16sp"
+                    android:textStyle="bold" android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_marginBottom="5dip" android:layout_marginLeft="5dip">
+        <TextView
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:text="Faktur"
+                android:id="@+id/textView1" android:textColor="@android:color/black" android:textSize="16sp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Faktur"
+                android:id="@+id/Giro_Faktur" android:textColor="@android:color/black" android:textSize="16sp"
+                android:textStyle="bold"/>
+    </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="5dip"
+                android:background="#888686">
+            <TextView
+                    android:layout_width="516dip"
+                    android:layout_height="wrap_content"
+                    android:text="Daftar Giro"
+                    android:id="@+id/textView1" android:textColor="@android:color/black" android:textSize="20sp"
+                    android:textStyle="bold" android:layout_marginTop="7dip" android:layout_marginBottom="7dip"
+                    android:layout_gravity="center" android:gravity="center_vertical" android:layout_marginLeft="5dip"/>
+            <ImageButton
+                    android:layout_width="42dip"
+                    android:layout_height="42dip"
+                    android:id="@+id/Giro_BtnTambah" android:src="@drawable/imgbtn_plus"
+                    android:layout_marginTop="5dip"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginBottom="5dip"
+                android:background="#3399FF">
+            <TextView
+                    android:layout_width="120dip"
+                    android:layout_height="wrap_content"
+                    android:text="No Giro"
+                    android:id="@+id/textView1" android:textColor="@android:color/black" android:textSize="16sp"
+                    android:textStyle="bold" android:layout_marginTop="5dip" android:layout_marginBottom="5dip"
+                    android:layout_gravity="center" android:gravity="center_vertical" android:layout_marginLeft="5dip"/>
+            <TextView
+                    android:layout_width="190dip"
+                    android:layout_height="wrap_content"
+                    android:text="Nominal"
+                    android:id="@+id/textView1" android:textColor="@android:color/black" android:textSize="16sp"
+                    android:textStyle="bold" android:layout_marginTop="5dip" android:layout_marginBottom="5dip"
+                    android:layout_gravity="center" android:gravity="center_vertical" android:layout_marginLeft="5dip"/>
+            <TextView
+                    android:layout_width="70dip"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal"
+                    android:id="@+id/textView1" android:textColor="@android:color/black" android:textSize="16sp"
+                    android:textStyle="bold" android:layout_marginTop="5dip" android:layout_marginBottom="5dip"
+                    android:layout_gravity="center" android:gravity="center_vertical" android:layout_marginLeft="5dip"
+                    android:visibility="gone"/>
+        </LinearLayout>
+
+        <ListView
+                android:id="@+id/Giro_List"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentBottom="true"
+                   android:layout_gravity="bottom"
+                   android:paddingTop="5dip" android:orientation="horizontal"
+                   android:gravity="center_horizontal|left" android:paddingBottom="5dip"
+                   android:background="#3399FF" android:id="@+id/linearLayout">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="476dip"
+                android:layout_height="fill_parent" android:layout_gravity="left" android:gravity="left"
+                android:paddingLeft="5dip">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="476dip"
+                    android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                    >
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Rp :"
+                            android:id="@+id/TextView" android:textStyle="bold"
+                            android:textColor="@android:color/white"/>
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Rp. "
+                            android:id="@+id/TextView" android:textStyle="bold" android:textColor="#FF0000"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rupiah"
+                            android:id="@+id/Giro_Rp" android:textStyle="bold"
+                            android:textColor="#FF0000"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="476dip"
+                    android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                    >
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="85dip"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Giro : "
+                            android:id="@+id/TextView" android:textStyle="bold"
+                            android:textColor="@android:color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="125dip"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Giro Total"
+                            android:id="@+id/Giro_Total" android:textStyle="bold"
+                            android:textColor="@android:color/white"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:id="@+id/Giro_BtnSubmit" style="@style/btnStyleGreen" android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

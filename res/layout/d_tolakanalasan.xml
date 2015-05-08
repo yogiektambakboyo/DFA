@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@android:color/white">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip" android:layout_marginTop="10dip">
+        <TextView
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:text="Alasan"
+                android:id="@+id/textView" android:textColor="@android:color/black" android:layout_marginLeft="10dip"
+                android:layout_gravity="center" android:textStyle="bold"/>
+        <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/DTolakanAlasan_Alasan" android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="#3399FF"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dip" android:layout_marginBottom="2dip">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batal"
+                android:id="@+id/DTolakan_AlasanBtnBatal" android:layout_gravity="center"
+                android:layout_marginTop="5dip" style="@style/btnStyleRed" android:layout_marginBottom="5dip"
+                android:layout_marginRight="20dip"/>
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:id="@+id/DTolakan_AlasanBtnSubmit" android:layout_gravity="center"
+                android:layout_marginTop="5dip" style="@style/btnStyleGreen" android:layout_marginBottom="5dip"
+                />
+
+    </LinearLayout>
+</LinearLayout>

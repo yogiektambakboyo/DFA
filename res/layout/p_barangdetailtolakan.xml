@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" android:background="@android:color/white">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:text="Nama "
+                    android:id="@+id/textView" android:textSize="16sp" android:textStyle="bold"
+                    android:textColor="#3399FF" android:layout_marginLeft="5dip"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jml (Pcs)"
+                    android:id="@+id/textView" android:textSize="16sp" android:textStyle="bold"
+                    android:textColor="#3399FF"/>
+        </LinearLayout>
+        <ListView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/search" android:layout_above="@+id/linearLayout"/>
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_marginTop="10dip" android:gravity="center_vertical|center_horizontal">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tutup"
+                    android:id="@+id/BarangTolakan_BtnTutup" style="@style/btnStyleDarkBlue"
+                    android:layout_marginTop="5dip" android:layout_marginBottom="5dip"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

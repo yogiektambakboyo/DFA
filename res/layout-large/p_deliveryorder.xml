@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" android:background="@android:color/white">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="fill_parent"
+                      android:layout_height="48dip" android:layout_marginBottom="3dip"
+                      android:background="@drawable/wh_taskbg" android:layout_gravity="left"
+                >
+            <TextView
+                    android:layout_width="512dip"
+                    android:layout_height="48dip"
+                    android:text="DELIVERY ORDER"
+                    android:id="@+id/DeliveryOrder_LblDevOr" android:layout_gravity="left" android:textSize="25sp"
+                    android:textColor="@android:color/white" android:textStyle="bold"
+                    android:layout_marginLeft="5dip" android:gravity="center_vertical"/>
+            <ImageView
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:id="@+id/DeliveryOrder_imgBtnFilter" android:src="@drawable/imgbtn_filter"
+                    android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="2dip">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KKPDV"
+                    android:id="@+id/DeliveryOrder_LabelSpn" android:layout_gravity="center" android:textStyle="bold"
+                    android:layout_marginLeft="5dip" android:textColor="@android:color/black" android:textSize="13dip"/>
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/DeliveryOrder_SpnKKPDV" android:layout_gravity="center"
+                android:layout_marginLeft="10dip"/>
+        </LinearLayout>
+
+        <ListView
+                android:id="@+id/DeliveryOrderListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DeliveryOrder_Search" android:layout_above="@+id/linearLayout"
+                android:layout_marginBottom="10dip"/>
+
+    </LinearLayout>
+
+    <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentBottom="true"
+                   android:layout_gravity="bottom"
+                   android:paddingTop="5dip" android:orientation="horizontal"
+                   android:gravity="center_horizontal|left" android:paddingBottom="5dip"
+                   android:background="#3399FF" android:id="@+id/linearLayout">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_gravity="left" android:gravity="left"
+                android:paddingLeft="5dip">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                    >
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Inv : "
+                            android:id="@+id/DeliveryOrder_JdlInv" android:textStyle="bold"
+                            android:textColor="@android:color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        android:layout_marginRight="20dip">
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="99"
+                            android:id="@+id/DeliveryOrder_FakturTotal" android:textStyle="bold"
+                            android:textColor="@android:color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="InvPro : "
+                            android:id="@+id/DeliveryOrder_JdlInvPro" android:textStyle="bold"
+                            android:textColor="@android:color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:layout_gravity="left" android:gravity="left"
+                        >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="99"
+                            android:id="@+id/DeliveryOrder_FakturTerproses" android:textStyle="bold"
+                            android:textColor="@android:color/white"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

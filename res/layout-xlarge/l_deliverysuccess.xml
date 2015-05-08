@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="#bfbfbf">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip" android:layout_marginBottom="2dip" android:paddingTop="2dip"
+            android:paddingBottom="2dip">
+
+        <LinearLayout
+                android:layout_width="526dip"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/DeliverySucces_Perusahaan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:paddingTop="6dip"
+                    android:paddingBottom="2dip"
+                    android:layout_marginLeft="5dip" android:text="Perusahaan" android:textStyle="bold"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginLeft="7dip">
+                <TextView
+                        android:layout_width="75dip"
+                        android:layout_height="wrap_content"
+                        android:text="Kode         :"
+                        android:id="@+id/TextView" android:layout_gravity="left|center_vertical" android:textSize="12sp"
+                        android:textColor="#ffffff"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kode"
+                        android:layout_marginLeft="5dip"
+                        android:id="@+id/DeliverySucces_ShipTo" android:layout_gravity="left|center_vertical" android:textSize="12sp"
+                        android:textColor="#ffffff" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginLeft="7dip">
+                <TextView
+                        android:layout_width="75dip"
+                        android:layout_height="wrap_content"
+                        android:text="Faktur      :"
+                        android:id="@+id/TextView" android:layout_gravity="left|center_vertical" android:textSize="12sp"
+                        android:textColor="#ffffff"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Faktur"
+                        android:layout_marginLeft="5dip"
+                        android:id="@+id/DeliverySucces_Faktur" android:layout_gravity="left|center_vertical"
+                        android:textColor="#ffffff" android:textStyle="bold" android:textSize="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginLeft="7dip">
+                <TextView
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:text="Total Bayar  :"
+                        android:id="@+id/TextView" android:layout_gravity="left|center_vertical" android:textSize="12sp"
+                        android:textColor="#ffffff"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Bayar"
+                        android:layout_marginLeft="5dip"
+                        android:id="@+id/DeliverySucces_TotalBayar" android:layout_gravity="left|center_vertical"
+                        android:textColor="#ffffff" android:textStyle="bold" android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginLeft="7dip" android:visibility="visible">
+                <TextView
+                        android:layout_width="90dip"
+                        android:layout_height="wrap_content"
+                        android:text="Pembayaran  :"
+                        android:id="@+id/TextView" android:layout_gravity="left|center_vertical" android:textSize="12sp"
+                        android:textColor="#ffffff" android:visibility="visible"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pembayaran"
+                        android:layout_marginLeft="5dip"
+                        android:id="@+id/DeliverySucces_Pembayaran" android:layout_gravity="left|center_vertical"
+                        android:textColor="#ffffff" android:textStyle="bold" android:textSize="12sp"
+                        android:visibility="visible"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="32dip"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_gravity="center">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/DeliverySucces_Image" android:background="@drawable/arrow_left"
+                    android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

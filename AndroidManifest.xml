@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.bcp.DFA"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="11"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <supports-screens android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:xlargeScreens="true"
+                      android:anyDensity="true" />
+    <!--<uses-feature
+            android:glEsVersion="0x00020000"
+            android:required="true"/>-->
+    <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
+<!--        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />-->
+        <meta-data
+                android:name="com.google.android.maps.v2.API_KEY"
+                android:value="AIzaSyAmdm9UbtSP4s0rd55fVgAeCkT2zrXhz6M"/>
+        <activity android:name=".ActivityMain"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivitySetting" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityMainMenu" android:theme="@android:style/Theme.Black.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityPelanggan" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivitySinkron" android:theme="@android:style/Theme.Black.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityDeliveryOrder" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityInvoice" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityBarang" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityGIF" android:theme="@android:style/Theme.Black.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityMenuDeliveryList"  android:theme="@android:style/Theme.Black.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityPickList" android:theme="@android:style/Theme.Black.NoTitleBar" android:windowSoftInputMode="stateHidden" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityPembayaran"  android:theme="@android:style/Theme.Black.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityPembayaranGiro"  android:theme="@android:style/Theme.Black.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityDeliverySuccess"  android:theme="@android:style/Theme.Black.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityInvoiceNotDelivery"  android:theme="@android:style/Theme.Black.NoTitleBar" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityMaps"/>
+        <activity android:name=".AdapterCustomSimple"/>
+        <activity android:name=".AdapterBarangListView"/>
+        <activity android:name=".AdapterPelangganListView"/>
+        <activity android:name=".AdapterInvoiceListView"/>
+        <activity android:name=".AdapterDeliverySuccessListView"/>
+        <activity android:name=".AdapterMenuPembayaranListView"/>
+        <activity android:name=".AdapterGiroListView"/>
+        <activity android:name=".FN_GifWebView"/>
+        <activity android:name=".FN_MapsGoogleParser"/>
+        <activity android:name=".FN_MapsParser"/>
+        <activity android:name=".FN_MapsRoute"/>
+        <activity android:name=".FN_MapsRouting"/>
+        <activity android:name=".FN_MapsRoutingListener"/>
+        <activity android:name=".FN_MapsSegment"/>
+        <activity android:name=".FN_MapsXMLParser"/>
+        <activity android:name=".AdapterPelangganUploadedListView"/>
+        <activity android:name=".ActivityTolakan" android:theme="@android:style/Theme.Black.NoTitleBar" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".AdapterBarangTolakan"/>
+        <activity android:name=".DataBarangTolakan"/>
+        <activity android:name=".ActivityMainChecker"/>
+        <activity android:name=".ActivityMainMenuChecker" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name=".ActivityCheckerOrder" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name=".ActivityCheckerTolakan" android:theme="@android:style/Theme.Black.NoTitleBar"  android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".AdapterBarangTolakanListView"/>
+        <activity android:name=".ActivityCheckerSinkron" android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity android:name=".ActivityCheckerSuccess"  android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <service  android:name=".ServiceLocation"></service>
+    </application>
+</manifest>

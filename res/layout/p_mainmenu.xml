@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="match_parent" android:background="#fafffb">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="horizontal"
+                  android:layout_width="fill_parent"
+                  android:layout_height="64dip" android:layout_marginBottom="10dip"
+                  android:background="@drawable/wh_taskbg" android:layout_gravity="center">
+        <TextView
+                android:layout_width="256dip"
+                android:layout_height="64dip"
+                android:text="MENU UTAMA"
+                android:id="@+id/txtMainMenuUtama" android:textSize="25sp"
+                android:textColor="@android:color/white" android:textStyle="bold"
+                android:gravity="center_vertical|left" android:layout_gravity="center" android:layout_marginLeft="10dip"
+                />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="horizontal"
+                      android:layout_width="match_parent"
+                      android:layout_height="fill_parent" android:layout_marginBottom="3dip"
+                      android:layout_gravity="left"
+                      android:gravity="end" android:paddingRight="5dip">
+        <ImageView
+                android:layout_width="42dip"
+                android:layout_height="42dip"
+                android:id="@+id/MainMenu_Info" android:src="@drawable/imgbtn_info"
+                android:layout_gravity="center_vertical|right"/>
+            </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:paddingRight="5dip">
+
+        <TextView
+                android:id="@+id/MainMenu_TxtTime"
+                android:text="LoginTime"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true" android:layout_marginRight="5dip"
+                android:layout_marginBottom="5dip" android:textStyle="bold" android:textColor="@android:color/black"
+                />
+
+        <TextView
+                android:id="@+id/OperatorCode"
+                android:text="USER :"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true" android:layout_marginLeft="5dip"
+                android:layout_marginBottom="5dip" android:textStyle="bold" android:textColor="@android:color/black"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UserName"
+                android:id="@+id/MainMenu_TxtUser" android:layout_toRightOf="@+id/OperatorCode"
+                android:layout_alignParentBottom="true" android:textStyle="bold"
+                android:textColor="@android:color/black" android:layout_marginBottom="5dip"
+                android:layout_marginLeft="2dip"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

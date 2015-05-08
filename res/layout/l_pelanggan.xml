@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="#bfbfbf">
+
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip" android:layout_marginBottom="2dip" android:paddingTop="2dip"
+            android:paddingBottom="2dip">
+
+        <LinearLayout
+                android:layout_width="280dip"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/Pelanggan_Perusahaan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:paddingTop="6dip"
+                    android:paddingBottom="2dip"
+                    android:layout_marginLeft="5dip" android:text="Pelanggan" android:textStyle="bold"/>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginLeft="7dip">
+                <TextView
+                        android:layout_width="75dip"
+                        android:layout_height="wrap_content"
+                        android:text="Kode         :"
+                        android:id="@+id/TextView" android:layout_gravity="left|center_vertical" android:textSize="12sp"
+                        android:textColor="#ffffff"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kode Pelanggan"
+                        android:layout_marginLeft="5dip"
+                        android:id="@+id/Pelanggan_ShipTo" android:layout_gravity="left|center_vertical" android:textSize="12sp"
+                        android:textColor="#ffffff" android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginLeft="7dip">
+                <TextView
+                        android:layout_width="75dip"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat     :"
+                        android:id="@+id/DeliveryOrderList_TxtTgl" android:layout_gravity="left|center_vertical" android:textSize="12sp"
+                        android:textColor="#ffffff"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat"
+                        android:layout_marginLeft="5dip"
+                        android:id="@+id/Pelanggan_Alamat" android:layout_gravity="left|center_vertical"
+                        android:textColor="#ffffff" android:textStyle="bold" android:textSize="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginLeft="7dip">
+                <TextView
+                        android:layout_width="75dip"
+                        android:layout_height="wrap_content"
+                        android:text="Faktur      :"
+                        android:id="@+id/TextView" android:layout_gravity="left|center_vertical" android:textSize="12sp"
+                        android:textColor="#ffffff"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Faktur"
+                        android:layout_marginLeft="5dip"
+                        android:id="@+id/Pelanggan_Faktur" android:layout_gravity="left|center_vertical"
+                        android:textColor="#ffffff" android:textStyle="bold" android:textSize="12sp"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginLeft="7dip">
+                <TextView
+                        android:layout_width="75dip"
+                        android:layout_height="wrap_content"
+                        android:text="Total Bayar  :"
+                        android:id="@+id/DeliveryOrderList_TxtJmlTolakan" android:layout_gravity="left|center_vertical" android:textSize="12sp"
+                        android:textColor="#ffffff"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Bayar"
+                        android:layout_marginLeft="5dip"
+                        android:id="@+id/Pelanggan_TotalBayar" android:layout_gravity="left|center_vertical"
+                        android:textColor="#ffffff" android:textStyle="bold" android:textSize="12sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginLeft="7dip" android:visibility="gone">
+                <TextView
+                        android:layout_width="70dip"
+                        android:layout_height="wrap_content"
+                        android:text="No PickList  :"
+                        android:id="@+id/TextView" android:layout_gravity="left|center_vertical" android:textSize="12sp"
+                        android:textColor="#ffffff" android:visibility="gone"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No Pick List"
+                        android:layout_marginLeft="5dip"
+                        android:id="@+id/Pelanggan_NoPickList" android:layout_gravity="left|center_vertical"
+                        android:textColor="#ffffff" android:textStyle="bold" android:textSize="12sp"
+                        android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginLeft="7dip" android:visibility="gone">
+                <TextView
+                        android:layout_width="70dip"
+                        android:layout_height="wrap_content"
+                        android:text="Ket Pemb. :"
+                        android:id="@+id/TextView" android:layout_gravity="left|center_vertical" android:textSize="12sp"
+                        android:textColor="#ffffff"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ket. Pembayaran"
+                        android:layout_marginLeft="5dip"
+                        android:id="@+id/Pelanggan_KetPem" android:layout_gravity="left|center_vertical"
+                        android:textColor="#ffffff" android:textStyle="bold" android:textSize="12sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="32dip"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_gravity="center" android:gravity="end">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Pelanggan_Image" android:background="@drawable/arrow_left"
+                    android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

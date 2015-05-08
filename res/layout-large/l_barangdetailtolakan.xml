@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" android:orientation="vertical">
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="35dip" android:layout_alignParentLeft="true" android:layout_marginLeft="5dip"
+            android:paddingTop="5dip" android:paddingBottom="5dip" android:background="@android:color/white">
+
+        <TextView
+                android:id="@+id/BarangTolakan_TxtKet"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:text="Keterangan" android:textSize="12sp" android:layout_gravity="top"
+                android:textColor="#3399FF"/>
+        <TextView
+                android:id="@+id/BarangTolakan_TxtJml"
+                android:layout_width="90dip"
+                android:layout_height="wrap_content"
+                android:text="Jml" android:layout_gravity="center|top"
+                android:layout_marginRight="5dip" android:textSize="12sp"
+                android:textColor="#3399FF" android:gravity="center_vertical|center_horizontal"/>
+
+    </LinearLayout>
+
+</LinearLayout>
